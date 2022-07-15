@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "api", produces = {MediaType.TEXT_PLAIN_VALUE})
 public class AnswerResource {
-
+	//comment
 	private final Logger logger = LoggerFactory.getLogger(AnswerResource.class);
 
 	private final QueryProcessor queryProcessor;
