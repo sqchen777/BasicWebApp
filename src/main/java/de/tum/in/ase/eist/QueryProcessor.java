@@ -21,7 +21,7 @@ public class QueryProcessor {
             int a = Integer.parseInt(nums[0]);
             int b = Integer.parseInt(nums[1]);
             return Integer.toString(a + b);
-        } else {
+        } else if (query.contains("largest")) {
             String sub = query.substring(query.indexOf(":") + 1);
             String[] nums = sub.split(",");
             int[] n = new int[nums.length];
@@ -36,6 +36,8 @@ public class QueryProcessor {
                 }
             }
             return Integer.toString(max);
+        } else {
+            return "";
         }
     }
 }
