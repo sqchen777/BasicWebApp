@@ -26,7 +26,7 @@ public class QueryProcessor {
             String[] nums = sub.split(",");
             int[] n = new int[nums.length];
             for (int i = 0; i < nums.length; i++) {
-                n[i] = Integer.parseInt(nums[i]);
+                n[i] = Integer.parseInt(nums[i].trim());
             }
 
             int max = 0;
