@@ -17,7 +17,7 @@ public class QueryProcessor {
             return "MyTeam";
         } else if (query.contains("plus")) { // TODO extend the programm here
             String sub = query.substring(8);
-            String[] nums = sub.split("plus");
+            String[] nums = sub.split(" plus ");
             int a = Integer.parseInt(nums[0]);
             int b = Integer.parseInt(nums[1]);
             return Integer.toString(a + b);
